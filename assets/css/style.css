@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+	min-width: 1148px;
+}
+* {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+	width: 1148px !important;
+	min-width: 1148px !important;
+}
+
+.site-logo {
+	width: 150px;
+	margin-left: -15px;
+}
+
+.soc-med-icon {
+	width: 32px;
+}
+
+.button-primary {
+	width: auto;
+	padding: 0 20px;
+	height: 32px;
+	line-height: 30px;
+	margin-left: 10px;
+	font-size: 13px;
+	text-indent: 0;
+	border: 1px solid #14a9e4;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+
+.button-primary-inverted {
+	width: auto;
+	padding: 0 20px;
+	height: 32px;
+	line-height: 30px;
+	margin-left: 10px;
+	font-size: 13px;
+	text-indent: 0;
+	border: 1px solid #14a9e4;
+	background: #093648;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+
+.menu-overlay {
+	top: 40px;
+	background-color: #00000080;
+	backdrop-filter: blur(10px);
+	display: none;
+}
+
+.menu-powerball-image {
+	text-align: center;
+}
+
+.menu-powerball-image:hover img {
+	border: 2px solid #10beff;
+}
+
+.menu-powerball-image img {
+	width: 124px;
+	height: 124px;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.menu-powerball-image:hover span {
+	color: #10beff;
+}
+
+.hover-menu:hover .menu-overlay {
+	display: block;
+}
+/* 
+.menu-link {
+	text-align: center;
+	width: calc(100% / 8);
+} */
+
+.swiper .swiper-slide {
+	width: 1148px !important; /* or any other fixed width */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper .swiper-slide img {
+	height: 440px;
+	object-fit: cover;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.swiper .swiper-slide-prev {
+	transform: scale(0.9) !important;
+	filter: blur(5px) brightness(0.5);
+}
+
+.swiper .swiper-slide-next {
+	transform: scale(0.9) !important;
+	filter: blur(5px) brightness(0.5);
+}
+
+.swiper .swiper-slide-active {
+	transition: 0.5s all;
+	filter: blur(0px) brightness(1) !important;
+}
+
+.swiper-button-prev {
+	left: 18% !important;
+	color: #10beff !important;
+}
+
+.swiper-button-next {
+	right: 18% !important;
+	color: #10beff !important;
+}
+
+.swiper-pagination {
+	width: 90px !important;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px 20px !important;
+	border-radius: 100px;
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	left: 74% !important;
+	bottom: 10px;
+	transform: translateX(-50%);
+}
+
+.marquee {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+	animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		text-indent: 90%;
+	}
+
+	100% {
+		text-indent: -40em;
+	}
+}
+
+.marquee-icon {
+	background: #000 url(../images/icons/megaphone.png) 10px 50% no-repeat;
+	background-size: 15px;
+	padding: 5px 0px;
+	border-radius: 100px;
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	transform: translate(0%, -50%);
+	font-size: 12px;
+	padding-left: 30px;
+	padding-right: 10px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.elip {
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.sections-lists section {
+	width: calc(100% / 3) !important;
+}
+
+.footer-swiper img {
+	height: 50px;
+}

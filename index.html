@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="assets/css/style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="assets/js/theme.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	</head>
+	<body class="bg-primaryBg">
+		<!-- Navigation Section -->
+		<div class="container mx-auto">
+			<div class="flex items-center justify-between">
+				<!-- Logo Section -->
+				<div class="left-section py-4">
+					<img
+						class="site-logo"
+						src="./assets/images/logo/logo.png"
+						alt="" />
+				</div>
+				<!-- Logo Section -->
+
+				<div class="right-section">
+					<div class="top-section text-white flex justify-end mb-2">
+						<div class="text-sm border-r-2 border-white/50 px-4">
+							<a href="#">이벤트</a>
+						</div>
+						<div class="text-sm border-r-secondaryBg pl-4">
+							<a href="#">고객센터</a>
+						</div>
+					</div>
+					<!-- Guess Section -->
+					<div class="top-section text-white flex">
+						<div class="flex gap-2 items-center">
+							<p class="text-primary text-sm">공식채널</p>
+							<img
+								class="soc-med-icon"
+								src="assets/images/socmed/tel.png"
+								alt="" />
+							<img
+								class="soc-med-icon"
+								src="assets/images/socmed/talk.png"
+								alt="" />
+						</div>
+						<div class="flex items-center">
+							<button class="button-primary-inverted text-primary">회원가입</button>
+							<button class="button-primary bg-primary text-black">회원가입</button>
+						</div>
+					</div>
+					<!-- Guess Section -->
+				</div>
+			</div>
+		</div>
+		<!-- Menu Section -->
+		<div class="bg-black border-b-2 border-primary w-full relative">
+			<div class="container mx-auto text-white flex items-center justify-between font-bold">
+				<div class="menu-link hover-menu py-2">
+					<span class="cursor-pointer">EVO파워볼</span>
+					<div class="absolute left-0 w-full menu-overlay border-y-2 border-primary z-10">
+						<div class="container mx-auto py-8 h-96">
+							<div class="flex items-center gap-4">
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/1.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/2.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/3.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/4.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/5.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/6.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/7.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-link hover-menu py-2">
+					<span class="cursor-pointer">EVO파워볼오토</span>
+					<div class="absolute left-0 w-full menu-overlay border-y-2 border-primary z-10">
+						<div class="container mx-auto py-8 h-96">
+							<div class="flex items-center gap-4">
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/1.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/2.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/3.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/4.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/5.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/6.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/7.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">공지사항</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">마이페이지</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">파트너</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">충전</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">환전</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">배팅내역</span>
+				</div>
+			</div>
+		</div>
+		<!-- Menu Section -->
+		<!-- End of Navigation Section -->
+		<!-- Marquee Section -->
+		<div class="border-b border-white/40">
+			<div class="container mx-auto py-3 relative">
+				<div class="marquee-icon">
+					<span>공지</span>
+				</div>
+				<div class="marquee">
+					<div>
+						<p
+							class="text-sm text-white/80"
+							id="lineMsg">
+							01월 13일 추첨 - US 메가 밀리언스 1등 당첨금 2,469억<span
+								style="display: inline-block; width: 60px"></span
+							>01월 13일 추첨 - 유로 밀리언스 1등 당첨금 1,126억<span
+								style="display: inline-block; width: 60px"></span
+							>01월 11일 추첨 - 홍콩 마크6 1등 당첨금 13억 5천<span
+								style="display: inline-block; width: 60px"></span
+							>01월 11일 추첨 - US 파워볼 1등 당첨금 792억
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Marquee Section -->
+		<!-- Carousel Section -->
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/1.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/2.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/3.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/4.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/5.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/6.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/7.png"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/8.jpg"
+						alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img
+						src="assets/images/carousel/9.jpg"
+						alt="" />
+				</div>
+			</div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- Carousel Section -->
+
+		<div class="container mx-auto py-10">
+			<!-- Event Section -->
+			<section class="mb-10">
+				<div class="border-l-4 border-primary pl-5 mb-4">
+					<h2 class="text-2xl font-bold text-white">이벤트</h2>
+				</div>
+				<hr class="border-white/10 my-4" />
+
+				<div class="flex items-center justify-between">
+					<div class="event-card">
+						<img
+							class="mb-4"
+							src="assets/images/event/1.png"
+							alt="" />
+						<h2 class="text-xl text-white font-bold mb-2">24년 01월 신규회원 이벤트</h2>
+						<p class="text-white/50 text-sm">24년 01월 신규회원 이벤트</p>
+					</div>
+					<div class="event-card">
+						<img
+							class="mb-4"
+							src="assets/images/event/2.png"
+							alt="" />
+						<h2 class="text-xl text-white font-bold mb-2">친구야 쿠폰 같이 받자!</h2>
+						<p class="text-white/50 text-sm">친구야 쿠폰 같이받자</p>
+					</div>
+					<div class="event-card">
+						<img
+							class="mb-4"
+							src="assets/images/event/3.png"
+							alt="" />
+						<h2 class="text-xl text-white font-bold mb-2">텔레그램 채널 이벤트</h2>
+						<p class="text-white/50 text-sm">텔레그램 채널 이벤트</p>
+					</div>
+				</div>
+			</section>
+			<!-- Event Section -->
+
+			<div class="flex items-center justify-between gap-2">
+				<!-- Notice Section -->
+				<div class="w-full h-64 bg-secondaryBg">
+					<div class="py-2 text-center bg-secondaryBg border-b border-black">
+						<h2 class="text-xl font-bold text-white">공지사항</h2>
+					</div>
+					<ul class="text-white text-center p-4">
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl text-xs rounded-lg bg-red-500 px-4 py-1">중요</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									새롭게 도입된 "PAX 코인" 이용sdsds sdasda sdsd 방법
+								</label>
+							</div>
+							<div>2022.05.20</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl text-xs rounded-lg bg-red-500 px-4 py-1">중요</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									구글 OTP 서비스 도입
+								</label>
+							</div>
+							<div>2022.05.20</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="block text-xs w-16 text-primary">[슬롯]</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									신규 슬롯 게임사 원터치(OneTouch) 오픈 안내
+								</label>
+							</div>
+							<div>2022.05.20</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="block text-xs w-16 text-primary">[일반안내]</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									2024 신년인사
+								</label>
+							</div>
+							<div>2022.05.20</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="block text-xs w-16 text-primary">[스포츠]</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									스보벳 스포츠 베팅 한도 안내
+								</label>
+							</div>
+							<div>2022.05.20</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Notice Section -->
+
+				<!-- Deposit Section -->
+				<div class="w-full h-64 bg-secondaryBg">
+					<div class="py-2 text-center bg-secondaryBg border-b border-black">
+						<h2 class="text-xl font-bold text-white">실시간 입금 현황</h2>
+					</div>
+					<ul class="text-white text-center p-4">
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48"
+									>sk****p</label
+								>
+							</div>
+							<div>50,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									y1****</label
+								>
+							</div>
+							<div>121,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48"
+									>ys****5</label
+								>
+							</div>
+							<div>350,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									wj****0
+								</label>
+							</div>
+							<div>500,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">re****</label>
+							</div>
+							<div>100,000 원</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Deposit Section -->
+
+				<!-- Withdrawal Section -->
+				<div class="w-full h-64 bg-secondaryBg">
+					<div class="py-2 text-center bg-secondaryBg border-b border-black">
+						<h2 class="text-xl font-bold text-white">실시간 출금 현황</h2>
+					</div>
+					<ul class="text-white text-center p-4">
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48"
+									>sh****6a</label
+								>
+							</div>
+							<div>50,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									x1****</label
+								>
+							</div>
+							<div>121,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48"
+									>ps****4</label
+								>
+							</div>
+							<div>350,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48">
+									yo****111
+								</label>
+							</div>
+							<div>500,000 원</div>
+						</li>
+						<li class="flex py-2 items-center justify-between gap-2 text-sm">
+							<div class="col-span-3">
+								<div class="w-16 block rounded-xl">15:40</div>
+							</div>
+							<div class="col-span-6 text-left">
+								<label class="text-ellipsis overflow-hidden block whitespace-nowrap w-48"
+									>i5****1</label
+								>
+							</div>
+							<div>100,000 원</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Withdrawal Section -->
+			</div>
+		</div>
+
+		<footer class="w-full border-t border-white/50 bg-secondaryBg py-10 text-center">
+			<div class="container mx-auto">
+				<p class="text-sm text-white/50">Copyright © WBC247 Company. All rights reserved</p>
+				<div class="footer-logo py-8">
+					<img
+						style="filter: grayscale(100%)"
+						class="mx-auto w-24"
+						src="./assets/images/logo/logo.png"
+						alt="" />
+				</div>
+
+				<div class="partners-logo flex items-center w-full">
+					<div class="col-span-3">
+						<h2 class="text-2xl font-bold text-white/50">공식 파트</h2>
+					</div>
+					<div class="col-span-9">
+						<!-- Marquee Section -->
+						<!-- <div class="marquee">
+							<div class="flex">
+								<img
+									src="./assets/images/footer/1.png"
+									alt="" />
+								<img
+									src="./assets/images/footer/1.png"
+									alt="" />
+								<img
+									src="./assets/images/footer/1.png"
+									alt="" />
+								<img
+									src="./assets/images/footer/1.png"
+									alt="" />
+								<img
+									src="./assets/images/footer/1.png"
+									alt="" />
+							</div>
+						</div> -->
+						<!-- Marquee Section -->
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="assets/js/script.js"></script>
+</html>
