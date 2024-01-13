@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="assets/css/style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="assets/js/theme.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	</head>
+	<body class="bg-primaryBg">
+		<!-- Navigation Section -->
+		<div class="container mx-auto">
+			<div class="flex items-center justify-between">
+				<!-- Logo Section -->
+				<div class="left-section py-4">
+					<a href="index.html">
+						<img
+							class="site-logo"
+							src="./assets/images/logo/logo.png"
+							alt="" />
+					</a>
+				</div>
+				<!-- Logo Section -->
+
+				<div class="right-section">
+					<div class="top-section text-white flex justify-end mb-2">
+						<div class="text-sm border-r-2 border-white/50 px-4">
+							<a href="#">이벤트</a>
+						</div>
+						<div class="text-sm border-r-secondaryBg pl-4">
+							<a href="customer-service.html">고객센터</a>
+						</div>
+					</div>
+					<!-- Guess Section -->
+					<div class="guess-box">
+						<div class="top-section text-white flex">
+							<div class="flex gap-2 items-center">
+								<p class="text-primary text-sm">공식채널</p>
+								<img
+									class="soc-med-icon"
+									src="assets/images/socmed/tel.png"
+									alt="" />
+								<img
+									class="soc-med-icon"
+									src="assets/images/socmed/talk.png"
+									alt="" />
+							</div>
+							<div class="flex items-center">
+								<button
+									class="button-primary-inverted text-primary"
+									onclick="openRegisterForm()">
+									회원가입
+								</button>
+								<button
+									class="button-primary bg-primary text-black"
+									onclick="openLoginForm()">
+									로그인
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- Guess Section -->
+
+					<!-- User Section -->
+					<div class="user-box hidden">
+						<div class="top-section text-white flex">
+							<div class="flex gap-2 items-center">
+								<p class="text-primary font-bold">LV 1</p>
+								<p class="text-white font-bold">홍길동 님</p>
+								<p class=""></p>
+								<p class="text-white font-bold">보유머니</p>
+								<p class="text-primary font-bold">100,000,000</p>
+								<p class="text-white font-bold">원</p>
+							</div>
+							<div class="flex items-center">
+								<button class="button-primary-inverted text-primary">빠른계좌문의</button>
+								<button
+									class="button-primary bg-primary text-black"
+									onclick="pageLogout()">
+									로그아웃
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- User Section -->
+				</div>
+			</div>
+		</div>
+		<!-- Navigation Section -->
+
+		<!-- Menu Section -->
+		<div class="bg-black border-b-2 border-primary w-full relative">
+			<div class="container mx-auto text-white flex items-center justify-between font-bold">
+				<div class="menu-link hover-menu py-2">
+					<span class="cursor-pointer">EVO파워볼</span>
+					<div class="absolute left-0 w-full menu-overlay border-y-2 border-primary z-10">
+						<div class="container mx-auto py-8 h-96">
+							<div class="flex items-center gap-4">
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/1.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/2.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/3.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/4.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/5.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/6.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/7.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-link hover-menu py-2">
+					<span class="cursor-pointer">EVO파워볼오토</span>
+					<div class="absolute left-0 w-full menu-overlay border-y-2 border-primary z-10">
+						<div class="container mx-auto py-8 h-96">
+							<div class="flex items-center gap-4">
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/1.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/2.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/3.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/4.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/5.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/6.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+								<div class="menu-powerball-image">
+									<img
+										src="assets/images/powerball/7.png"
+										alt="" />
+									<span class="text-sm font-normal"> EVO파워볼 2턴 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="menu-link active"
+					onclick="location.href='announcement.html'">
+					<span class="cursor-pointer">공지사항</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">마이페이지</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">파트너</span>
+				</div>
+				<div
+					class="menu-link"
+					onclick="location.href='deposit.html'">
+					<span class="cursor-pointer">충전</span>
+				</div>
+				<div
+					class="menu-link"
+					onclick="location.href='withdrawal.html'">
+					<span class="cursor-pointer">환전</span>
+				</div>
+				<div class="menu-link">
+					<span class="cursor-pointer">배팅내역</span>
+				</div>
+			</div>
+		</div>
+		<!-- Menu Section -->
+
+		<!-- Marquee Section -->
+		<div class="border-b border-white/40">
+			<div class="container mx-auto py-3 relative">
+				<div class="marquee-icon">
+					<span>공지</span>
+				</div>
+				<div class="marquee">
+					<div>
+						<p
+							class="text-sm text-white/80"
+							id="lineMsg">
+							01월 13일 추첨 - US 메가 밀리언스 1등 당첨금 2,469억<span
+								style="display: inline-block; width: 60px"></span
+							>01월 13일 추첨 - 유로 밀리언스 1등 당첨금 1,126억<span
+								style="display: inline-block; width: 60px"></span
+							>01월 11일 추첨 - 홍콩 마크6 1등 당첨금 13억 5천<span
+								style="display: inline-block; width: 60px"></span
+							>01월 11일 추첨 - US 파워볼 1등 당첨금 792억
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Marquee Section -->
+
+		<!-- Page Banner Section -->
+		<div class="w-full">
+			<div class="relative">
+				<div class="page-banner-title">
+					<h2 class="text-primary">공지사항</h2>
+				</div>
+				<img
+					class="w-full"
+					src="./assets/images/banner/page-banner.png"
+					alt="" />
+			</div>
+		</div>
+		<!-- Page Banner Section -->
+
+		<div class="container mx-auto py-2">
+			<!-- Lists Table -->
+			<div class="lists-table">
+				<table class="w-full border-t-2 border-primary text-white bg-secondaryBg text-center">
+					<thead>
+						<tr>
+							<th class="py-3">전환시간</th>
+							<th class="py-3 text-left">내용</th>
+							<th class="py-3">금액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★ 10월19일 NBA 개막기념 돌발 이벤트 진행 ★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★ 10월 18일 MLB리그 경기 취소 안내 ★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★★((공지)) 슬롯게임 긴급점검 종료 안내 ★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★★((공지)) 슬롯 긴급 점검 안내 ★★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★★ 크라운게임 정기 점검 종료 안내 ★★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★★ 크라운게임 정기 점검 안내 ★★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★★ 토큰게임 정기 점검 종료 안내 ★★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★★ 토큰게임 정기 점검 안내 ★★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★ 10월 16일 농협 시스템 정기점검 안내 ★★
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+						<tr class="bg-primaryBg border-b border-primary/10 hover-on">
+							<td
+								style="width: 15%"
+								class="relative">
+								<div class="marquee-icon table-icon">
+									<span>주요공지</span>
+								</div>
+							</td>
+							<td
+								onclick="openAnnouncement(this)"
+								style="width: 50%"
+								class="text-primary font-bold py-3 text-left cursor-pointer">
+								★★ 10월16일 돌발 이벤트 진행 MLB리그 벼랑 끝 다저스 희생양 될 위기
+							</td>
+							<td style="width: 10%">작성자</td>
+						</tr>
+						<tr class="hidden">
+							<td
+								colspan="3"
+								class="text-left p-5 text-sm">
+								<p>
+									● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br />
+									<br />
+									오 락 실 에 오신 것을 환영합니다 !<br />
+									안녕하세요 회원님<br />
+									<br />
+									☆★ NBA 개막 기념 돌발이벤트 ★☆<br />
+									<br />
+									▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br />
+									<br />
+									-기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br />
+									<br />
+									추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br />
+									<br />
+									-입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br />
+									<br />
+									-입금보너스 제한된 회원님들에게는 지급되지않습니다.<br />
+									<br />
+									-돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br />
+									<br />
+									-카지노 입금 보너스는 추가 적용되지않습니다.<br />
+									<br />
+									-금일 환전내역있는 회원님들께서는 참여불가능합니다.<br />
+									<br />
+									언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br />
+									<br />
+									또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br />
+									<br />
+									언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br />
+									<br />
+									-오락실 운영팀 올림-
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- Lists Table -->
+
+			<div class="pagination my-5">
+				<div class="flex gap-2 justify-center">
+					<div class="page-item">
+						<img
+							src="assets/images/icons/pagination/prev.png"
+							alt="" />
+					</div>
+					<div class="page-item">
+						<img
+							src="assets/images/icons/pagination/prev-single.png"
+							alt="" />
+					</div>
+					<div class="page-item page-number text-primary active"><span>1</span></div>
+					<div class="page-item page-number text-primary"><span>2</span></div>
+					<div class="page-item page-number text-primary"><span>3</span></div>
+					<div class="page-item">
+						<img
+							src="assets/images/icons/pagination/next-single.png"
+							alt="" />
+					</div>
+					<div class="page-item">
+						<img
+							src="assets/images/icons/pagination/next.png"
+							alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<footer class="w-full border-t border-white/50 bg-secondaryBg py-10 text-center">
+			<div class="container mx-auto">
+				<p class="text-sm text-white/50">Copyright © WBC247 Company. All rights reserved</p>
+				<div class="footer-logo py-8">
+					<img
+						style="filter: grayscale(100%)"
+						class="mx-auto w-24"
+						src="./assets/images/logo/logo.png"
+						alt="" />
+				</div>
+
+				<div class="partners-logo grid grid-cols-12 items-center w-full">
+					<div class="col-span-2">
+						<h2 class="text-2xl font-bold text-white/50">공식 파트</h2>
+					</div>
+					<div class="col-span-9 overflow-hidden relative">
+						<div class="absolute top-0 left-0 w-full h-full z-10"></div>
+						<div class="footer-marquee">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/1.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/2.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/3.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/4.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/5.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/6.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/7.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/8.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/9.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/10.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/11.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/12.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/13.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/14.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/15.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/16.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/17.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/18.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/19.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/20.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/21.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/22.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/23.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/24.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/25.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/26.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/27.png"
+										alt="" />
+								</div>
+								<div class="swiper-slide">
+									<img
+										src="./assets/images/footer/28.png"
+										alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section -->
+
+		<!-- Login Form -->
+		<div class="login-form bg-primaryBg hidden">
+			<div class="modal-header py-4 relatiive">
+				<img
+					src="assets/images/logo/logo.png"
+					alt="" />
+				<img
+					onclick="closeLoginForm()"
+					class="modal-close"
+					src="assets/images/icons/svg/close.svg"
+					alt="" />
+			</div>
+			<div class="border-2 border-primary/70 modal-body bg-black text-center p-10">
+				<h2 class="text-white font-bold text-lg">로그인 후 이용 가능합니다.</h2>
+
+				<div class="px-10 py-5">
+					<div class="mb-2 input-group grid grid-cols-12 bg-secondaryBg py-2 text-white rounded items-center">
+						<div class="input-icon col-span-2 border-r border-white/20">
+							<img
+								class="mx-auto"
+								src="assets/images/icons/svg/user.svg"
+								alt="" />
+						</div>
+						<div class="col-span-10 px-2">
+							<input
+								type="text"
+								class="w-full bg-transparent p-1.5" />
+						</div>
+					</div>
+					<div class="mb-2 input-group grid grid-cols-12 bg-secondaryBg py-2 text-white rounded items-center">
+						<div class="input-icon col-span-2 border-r border-white/20">
+							<img
+								class="mx-auto"
+								src="assets/images/icons/svg/lock.svg"
+								alt="" />
+						</div>
+						<div class="col-span-10 px-2">
+							<input
+								type="password"
+								class="w-full bg-transparent p-1.5" />
+						</div>
+					</div>
+
+					<button
+						class="button-primary bg-primary h-10 font-bold text-lg w-full m-0"
+						onclick="pageLogin()">
+						회원가입
+					</button>
+				</div>
+
+				<h2
+					class="text-white font-bold cursor-pointer"
+					onclick="closeLoginForm(); openRegisterForm();">
+					비밀번호를 잊으셨나요?
+				</h2>
+			</div>
+		</div>
+		<!-- Login Form -->
+
+		<!-- Register Form -->
+		<div class="register-form bg-primaryBg hidden">
+			<div class="modal-header py-4 relatiive">
+				<img
+					src="assets/images/logo/logo.png"
+					alt="" />
+				<img
+					onclick="closeRegisterForm()"
+					class="modal-close"
+					src="assets/images/icons/svg/close.svg"
+					alt="" />
+			</div>
+			<div class="border-2 border-primary/70 modal-body bg-black text-center p-10 text-white">
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">아이디 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							type="text"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left">
+						<span class="text-white/50">아이디는 4-16자리 입니다</span>
+					</div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">비밀번호 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							type="password"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left">
+						<span class="text-white/50">패스워드는 6-16 자리 입니다</span>
+					</div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">비밀번호 재입력 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							type="password"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left"></div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">이름 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							type="text"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left">
+						<span class="text-white/50">이름은 한글 2-5 자리 입니다</span>
+					</div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">전화번호 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							placeholder="'-' 없이 숫자만 입력"
+							type="text"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left"></div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">은행명 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<select class="w-full bg-secondaryBg p-2 rounded">
+							<option
+								value=""
+								selected="selected"
+								ng-bind="'Please Select a Bank' | translate"
+								class="ng-binding">
+								은행을 선택해주세요
+							</option>
+							<option value="1">SC제일은행</option>
+							<option value="2">경남은행</option>
+							<option value="3">광주은행</option>
+							<option value="4">국민은행</option>
+							<option value="27">신한은행</option>
+							<option value="6">기업은행</option>
+							<option value="7">농협중앙회</option>
+							<option value="8">농협회원조합</option>
+							<option value="9">대구은행</option>
+							<option value="10">대신증권</option>
+							<option value="11">대우증권</option>
+							<option value="12">동부증권</option>
+							<option value="13">동양종합금융증권</option>
+							<option value="14">메리츠증권</option>
+							<option value="15">미래에셋증권</option>
+							<option value="16">뱅크오브아메리카(BOA)</option>
+							<option value="17">부국증권</option>
+							<option value="18">부산은행</option>
+							<option value="19">산림조합중앙회</option>
+							<option value="20">산업은행</option>
+							<option value="21">삼성증권</option>
+							<option value="22">상호신용금고</option>
+							<option value="23">새마을금고</option>
+							<option value="24">수출입은행</option>
+							<option value="25">수협중앙회</option>
+							<option value="26">신영증권</option>
+							<option value="5">신한금융투자</option>
+							<option value="28">신협중앙회</option>
+							<option value="29">에스케이증권</option>
+							<option value="30">에이치엠씨투자증권</option>
+							<option value="31">엔에이치투자증권</option>
+							<option value="32">엘아이지투자증권</option>
+							<option value="33">외환은행</option>
+							<option value="34">우리은행</option>
+							<option value="35">우리투자증권</option>
+							<option value="36">우체국</option>
+							<option value="37">유진투자증권</option>
+							<option value="38">전북은행</option>
+							<option value="39">제주은행</option>
+							<option value="40">키움증권</option>
+							<option value="41">하나대투증권</option>
+							<option value="42">하나은행</option>
+							<option value="43">하이투자증권</option>
+							<option value="44">한국씨티은행</option>
+							<option value="45">한국투자증권</option>
+							<option value="46">한화증권</option>
+							<option value="47">KB(구현대)증권</option>
+							<option value="49">홍콩상하이은행</option>
+							<option value="53">카카오뱅크</option>
+							<option value="54">케이뱅크</option>
+							<option value="56">토스뱅크</option>
+							<option value="57">토스증권</option>
+						</select>
+					</div>
+					<div class="col-span-5 text-left"></div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">계좌번호 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							placeholder="계좌번호"
+							type="text"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left"></div>
+				</div>
+				<div class="grid grid-cols-12 gap-4 items-center mb-4">
+					<div class="col-span-3 text-right">가입코드 <span class="text-red-500">*</span></div>
+					<div class="col-span-4">
+						<input
+							type="text"
+							class="w-full bg-secondaryBg p-2 rounded" />
+					</div>
+					<div class="col-span-5 text-left"></div>
+				</div>
+
+				<div class="signup-info text-left border border-primary text-primary text-sm">
+					<ul>
+						<li>타명의 가입시 사유 불문 승인 거부되실 수 있습니다.</li>
+						<li>본인이 등록한 계좌로만 입금이 가능합니다.</li>
+						<li>가입신청하신후 승인 전화를 꼭 받아주세요.</li>
+						<li>무단으로 중복가입 시 사전 통보없이 등급 강등, 차단 되실 수 있습니다.</li>
+						<li>미성년자는 승인시 가입이 거부됩니다.</li>
+						<li>가입자명과 예금주 반드시 일치해야합니다.</li>
+						<li>보안을 위해 입금계좌는 자주 변경됩니다. 항상 입금계좌 확인 후 입금 부탁드립니다.</li>
+						<li>1:1 전용계좌 서비스도 이용이 가능하니 고객센터에 문의해주세요 *</li>
+					</ul>
+				</div>
+
+				<button
+					class="button-primary bg-primary h-10 font-bold text-lg w-full m-0"
+					onclick="closeRegisterForm()">
+					회원가입
+				</button>
+			</div>
+		</div>
+		<!-- Register Form -->
+
+		<div class="modal-overlay hidden"></div>
+	</body>
+	<script src="assets/js/script.js"></script>
+</html>

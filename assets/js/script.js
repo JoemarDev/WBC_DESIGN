@@ -40,3 +40,65 @@ const footerSwiper = new Swiper(".footer-marquee", {
 	spaceBetween: 20,
 	slidesPerView: 8,
 });
+
+const pageLogin = () => {
+	$(".guess-box").hide();
+	$(".user-box").show();
+	closeLoginForm();
+};
+const pageLogout = () => {
+	$(".guess-box").show();
+	$(".user-box").hide();
+};
+
+const openLoginForm = () => {
+	$(".modal-overlay").show();
+	$(".login-form").show();
+	$("body").css({
+		overflow: "hidden",
+	});
+};
+
+const closeLoginForm = () => {
+	$(".modal-overlay").hide();
+	$(".login-form").hide();
+
+	$("body").css({
+		overflowY: "scroll",
+	});
+};
+
+const openRegisterForm = () => {
+	$(".modal-overlay").show();
+	$(".register-form").show();
+	$("body").css({
+		overflow: "hidden",
+	});
+};
+
+const closeRegisterForm = () => {
+	$(".modal-overlay").hide();
+	$(".register-form").hide();
+	$("body").css({
+		overflowY: "scroll",
+	});
+};
+
+let transaction_amount = 0;
+
+const incrementAmount = (value) => {
+	transaction_amount += value;
+
+	const formattedAmount = transaction_amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+	$("#transaction-input").val(formattedAmount);
+};
+
+const resetTransactionAmount = () => {
+	transaction_amount = 0;
+	$("#transaction-input").val(null);
+};
+
+const openAnnouncement = (elem) => {
+	$(elem).parent().next().toggle();
+};

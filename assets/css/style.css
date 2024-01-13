@@ -12,6 +12,12 @@ body {
 	min-width: 1148px !important;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+}
+
 .site-logo {
 	width: 150px;
 	margin-left: -15px;
@@ -64,7 +70,7 @@ body {
 }
 
 .menu-powerball-image:hover img {
-	border: 2px solid #10beff;
+	border: 2px solid #0eafdd;
 }
 
 .menu-powerball-image img {
@@ -77,17 +83,16 @@ body {
 }
 
 .menu-powerball-image:hover span {
-	color: #10beff;
+	color: #0eafdd;
 }
 
 .hover-menu:hover .menu-overlay {
 	display: block;
 }
-/* 
-.menu-link {
-	text-align: center;
-	width: calc(100% / 8);
-} */
+
+.menu-link.active {
+	color: #0eafdd;
+}
 
 .swiper .swiper-slide {
 	width: 1148px !important; /* or any other fixed width */
@@ -122,12 +127,12 @@ body {
 
 .swiper-button-prev {
 	left: 18% !important;
-	color: #10beff !important;
+	color: #0eafdd !important;
 }
 
 .swiper-button-next {
 	right: 18% !important;
-	color: #10beff !important;
+	color: #0eafdd !important;
 }
 
 .swiper-pagination {
@@ -210,4 +215,157 @@ body {
 
 .footer-marquee > .swiper-wrapper {
 	transition-timing-function: linear !important;
+}
+
+.modal-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: rgba(0, 0, 0, 0.622);
+}
+
+.login-form {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	z-index: 20;
+	border-radius: 10px;
+}
+
+.modal-header img {
+	width: 150px;
+	margin: auto;
+}
+
+.modal-body {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.modal-close {
+	width: 40px !important;
+	position: absolute;
+	right: 22px;
+	top: 47px;
+	cursor: pointer;
+}
+
+.register-form {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 850px;
+
+	z-index: 20;
+	border-radius: 10px;
+}
+
+.signup-info {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.signup-info ul > li {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.signup-info ul > li:last-child {
+	list-style: none;
+	margin: 20px 0 0;
+}
+
+.register-form .modal-body {
+	max-height: 80vh;
+	overflow-y: scroll;
+}
+
+.register-form .modal-body::-webkit-scrollbar {
+	display: none;
+}
+
+.page-banner-title {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.tab-menu {
+	background: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.tab-menu div {
+	border-right: 1px solid #33333342;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.tab-menu .active {
+	background: #0eafdd;
+	color: #333;
+}
+
+.transaction-table table th {
+	width: 20%;
+}
+
+.transaction-table table td {
+	width: 80%;
+}
+
+.transaction-table .reset-amount {
+	background: #0eafdd !important;
+	color: #333;
+}
+
+.transaction-table .transaction-amount-button {
+	width: 80px;
+	background: #093648;
+	border: 1px solid #0eafdd;
+	padding: 0px 10px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.transaction-table .transaction-amount-button:hover {
+	background: #0eafdd;
+	color: #333;
+}
+
+.page-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	background: #333;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.page-number.active {
+	background: #0eafdd !important;
+	color: #333;
+}
+
+.table-icon {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.lists-table .hover-on:hover {
+	background: rgba(79, 79, 79, 0.165) !important;
 }
